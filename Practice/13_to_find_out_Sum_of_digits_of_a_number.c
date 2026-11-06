@@ -1,0 +1,18 @@
+#include <stdio.h>
+
+int main() {
+    int num, sum = 0;
+
+    printf ("Enter a Number: ");
+    scanf ("%d", &num);
+
+    while (num > 0) {
+        int r = num % 10;
+        sum += r;
+        num /= 10;
+    }
+
+    printf ("The Sum of Digits of %d is: %d\n", num, sum);
+
+    return 0;
+}
